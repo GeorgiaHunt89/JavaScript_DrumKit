@@ -57,7 +57,18 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
+  
 <script>
+    // Listen for key down event & run function
+    // (e) is the event object explaining what happens
+    window.addEventListener('keydown', function(e){
+        // search for audio element on page with data-key of 65
+        // use attribute selector
+        // data-keys=65 is a variable that lives in the event, switch to backticks & ES template string
+        const audio = document.querySelector(`audio[data-keys=${65}]`)
+console.log(e)
+
+    });
 
 </script>
 
