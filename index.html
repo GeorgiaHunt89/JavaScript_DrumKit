@@ -61,7 +61,7 @@
 <script>
     // Listen for key down event & run function
     // (e) is the event object explaining what happens
-    window.addEventListener('keydown', function(e){
+    function playSound(e){
         // search for audio element on page with data-key of 65
         // use attribute selector
         // data-keys=65 is a variable that lives in the event, switch to backticks & ES template string
@@ -71,17 +71,17 @@
         audio.currentTime = 0; // rewinds to the start
         audio.play();
         key.classList.add('playing');
-
-    });
+    };
 
     function removeTransition(e){
         if (e.propertyName !== 'transform') return; // Skip it if its not a transition
+        this.classList.remove('playing');
         console.log(e.propertyName);
     }
 
     const keys = document.querySelectorAll('.key');
     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-
+    window.addEventListener('keydown', playSound);
 </script>
 
 
