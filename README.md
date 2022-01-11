@@ -37,7 +37,7 @@ Georgia Hunt
 
 Walk through video demonstrating the application in action.
 
-- ![Tech Blog Walkthrough Gif](https://github.com/GeorgiaHunt89/Tech-Blog/blob/main/public/img/MyTechBlogWalkthroughGif.gif?raw=true)
+- ![JS_DrumKit_Walkthrough Gif](https://github.com/GeorgiaHunt89/JavaScript_DrumKit/blob/main/Walkthrough.gif)
 
 ## Deployment Link
 
